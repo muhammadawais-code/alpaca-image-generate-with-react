@@ -16,3 +16,6 @@ A fun and customizable Alpaca avatar generator built with **React**! Users can m
 - **Bootstrap** – For basic responsive styling
 - **HTML5 Canvas API** – To compose and download images
 - Project structure with **reusable components** and clean separation of concerns
+
+## 🎥 Video Demo
+📽️ [Watch Demo Video](./demo.mp4)
