@@ -21,4 +21,4 @@ A fun and customizable Alpaca avatar generator built with **React**! Users can m
 <video width="600" autoplay loop muted playsinline>
   <source src="./demo.mp4" type="video/mp4" />
   Your browser does not support the video tag.
-</video>)
+</video>
