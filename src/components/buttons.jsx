@@ -3,7 +3,7 @@ import '../styles/style.css'
 
 
 
-function Buttons ({btns, newAlpaca}){
+function Buttons ({btns , newAlpaca}){
 
     function capitalize(str) {
         if (!str) return '';
@@ -14,15 +14,18 @@ function Buttons ({btns, newAlpaca}){
 
     return (
         <>
-            <div id="btns-div">
+            <div className="col-md-6 col-12" id="btns-div">
 
                 <div id="main-heading-btns">
+                    <h4>Accessorize the Alpaca's</h4>
                     {Object.entries(btns).map((ent) => (
                         <button onClick={() => setSubButtons(ent[0])}>{capitalize(ent[0])}</button>
                     ))}
                 </div>
 
                 <div id="heading-all-btns">
+                <h4>Style</h4>
+
                     { (subButtons && subButtons !== "backgrounds") &&
                         Object.entries(btns[subButtons]).map((ent) => (
                             <button
@@ -45,6 +48,7 @@ function Buttons ({btns, newAlpaca}){
                     { (subButtons && subButtons === "backgrounds") &&
                         Object.entries(btns[subButtons]).map((ent) => (
                             <button
+                            id="bg-btn"
                             key={ent[0]}
                             style={{background: "none",border:"none"}}
                             onClick={() =>
@@ -54,7 +58,7 @@ function Buttons ({btns, newAlpaca}){
                               }))
                             }
                           >
-                            <img style={{width: 20, height:20,borderRadius:'50%'}} src={`alpaca/${subButtons}/${ent[1]}`} alt="" />
+                            <img id="bg-image"  style={{width: 30, height:30,borderRadius:'50%'}} src={`alpaca/${subButtons}/${ent[1]}`} alt="" />
                             
                           </button>
                            
@@ -64,6 +68,8 @@ function Buttons ({btns, newAlpaca}){
                     }
 
                 </div>
+
+
 
             </div>
         </>

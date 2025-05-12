@@ -2,6 +2,7 @@
 import './App.css'
 import { Buttons } from './components/buttons';
 import { Alpaca } from './components/alpaca';
+import { AlpacaDownload } from './components/imageDownload';
 import { useState } from 'react';
 
 function App() {
@@ -103,16 +104,32 @@ function App() {
   }
 
   const [alpacaAvatar,setAlpacaAvatar] = useState(RandomFunc(btns));
-
+  const downloadValues = [
+    `alpaca/backgrounds/${alpacaAvatar.backgrounds}`,
+    `alpaca/ears/${alpacaAvatar.ears}`,
+    `alpaca/neck/${alpacaAvatar.neck}`,
+    `alpaca/nose.png`,
+    `alpaca/mouth/${alpacaAvatar.mouth}`,
+    `alpaca/hair/${alpacaAvatar.hair}`,
+    `alpaca/accessories/${alpacaAvatar.accessories}`,
+    `alpaca/eyes/${alpacaAvatar.eyes}`,
+    `alpaca/leg/${alpacaAvatar.leg}`,
+  ]
 
   return (
     <>
 
     <h1>Alpaca Image Generator</h1>
-
-    <Buttons btns = {btns} newAlpaca = {setAlpacaAvatar}></Buttons>
-
+    <div className='row' >
+    <div className='col-12 justify-content-center' id='function-btns'>
+    <button onClick={() => setAlpacaAvatar(RandomFunc(btns))}>Random</button>
+    <AlpacaDownload imagePaths={downloadValues} />
+    </div>
     <Alpaca image={alpacaAvatar} />
+    <Buttons btns = {btns} alpacaVal={alpacaAvatar} newAlpaca = {setAlpacaAvatar}></Buttons>
+
+    </div>
+
 
     </>
   )

@@ -1,0 +1,67 @@
+
+
+#btns-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#main-heading-btns>button,#heading-all-btns>button{
+    padding: 10px;
+    margin: 5px;
+    gap: 10px;
+    border: 1px solid rgb(90, 63, 105);
+    background-color: none;
+    border-radius: 5px;
+
+}
+#main-heading-btns>button{
+    border: 1px solid rgb(80, 187, 137);
+
+}
+#heading-all-btns>button{
+    background-color:  rgb(90, 63, 105);
+    color: #fff;
+}
+
+#main-heading-btns>button:hover,#heading-all-btns>button:hover{
+    background-color: rgb(90, 63, 105);
+    color: #fff;
+}
+#heading-all-btns>button:hover{
+    background-color: none;
+    color: #fff;
+    border: 1px solid rgb(90, 63, 105);
+}
+
+
+#main-heading-btns,#heading-all-btns{
+    width: 70%;
+}
+
+#heading-all-btns > #bg-btn{
+    border: none;
+    background-color: none;
+
+}
+
+#bg-image:hover{
+    border: 3px solid rgb(90, 63, 105);
+}
+
+#alpaca-div{
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+#alpaca-div > img{
+    height: 400px;
+    width: 400px;
+    position:absolute;
+}

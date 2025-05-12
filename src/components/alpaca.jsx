@@ -5,7 +5,7 @@ function Alpaca ({ image }) {
     return (
         
         <>
-        <div id="alpaca-div">
+        <div className='col-md-6 col-12 justify-content-md-end justify-content-center' id="alpaca-div">
             <img src={`alpaca/backgrounds/${image.backgrounds}`} alt="" />
             <img src={`alpaca/ears/${image.ears}`} alt="" />
             <img src={`alpaca/neck/${image.neck}`} alt="" />
@@ -16,7 +16,6 @@ function Alpaca ({ image }) {
             <img src={`alpaca/eyes/${image.eyes}`} alt="" />
             <img src={`alpaca/leg/${image.leg}`} alt="" />
         </div>
-        
         </>
     )
 }
