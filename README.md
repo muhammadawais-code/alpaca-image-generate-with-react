@@ -18,4 +18,7 @@ A fun and customizable Alpaca avatar generator built with **React**! Users can m
 - Project structure with **reusable components** and clean separation of concerns
 
 ## 🎥 Video Demo
-📽️ [Watch Demo Video](./demo.mp4)
+<video width="600" autoplay loop muted playsinline>
+  <source src="./demo.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>)
